@@ -710,7 +710,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
           <div class="nav-container">
             <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
               <span class="toc"></span>
-              <ul class="nav"><li class="active"><a href="#Home">Home</a></li><li><a href="#Management">Management</a><ul class="nav"><li><a href="#Project-Management">Project Management</a></li><li><a href="#Batch-Render">Batch Render</a></li><li><a href="#Function-Management">Function Management</a></li><li><a href="#Material-Management">Material Management</a></li></ul></li><li><a href="#Editor">Editor</a><ul class="nav"><li><a href="#Asset-Panel">Asset Panel</a></li><li><a href="#Function-Editor">Function Editor</a></li><li><a href="#Render-Editor">Render Editor</a></li></ul></li><li><a href="#Modeling">Modeling</a><ul class="nav"><li><a href="Modeling#tutorial">Tutorial</a></li><li><a href="#Instructions">Instructions</a><ul class="nav"><li><a href="#Cut">Cut</a></li><li><a href="#Select">Select</a></li><li><a href="#Extrude">Extrude</a></li><li><a href="#Inset">Inset</a></li><li><a href="#Choose">Choose</a></li><li><a href="#Merge">Merge</a></li><li><a href="#Rename">Rename</a></li><li><a href="#Lod">Level of Detail</a></li><li><a href="#If">If</a></li><li><a href="#Loop">Loop</a></li></ul></li><li><a href="#Texture-Mapping">Texture Mapping</a>    </li><li><a href="#Examples">Examples</a></li></ul></li></ul>
+              <ul class="nav"><li class="active"><a href="#Home">Home</a></li><li><a href="#Management">Management</a><ul class="nav"><li><a href="#Project-Management">Project Management</a></li><li><a href="#Batch-Render">Batch Render</a></li><li><a href="#Function-Management">Function Management</a></li><li><a href="#Material-Management">Material Management</a></li></ul></li><li><a href="#Editor">Editor</a><ul class="nav"><li><a href="#Asset-Panel">Asset Panel</a></li><li><a href="#Function-Editor">Function Editor</a></li><li><a href="#Render-Editor">Render Editor</a></li></ul></li><li><a href="#Modeling">Modeling</a><ul class="nav"><li><a href="Modeling#tutorial">Tutorial</a></li><li><a href="#Instructions">Instructions</a><ul class="nav"><li><a href="#Cut">Cut</a></li><li><a href="#Select">Select</a></li><li><a href="#Extrude">Extrude</a></li><li><a href="#Inset">Inset</a></li><li><a href="#Choose">Choose</a></li><li><a href="#Merge">Merge</a></li><li><a href="#Rename">Rename</a></li><li><a href="#Instance">Instance</a></li><li><a href="#Lod">Level of Detail</a></li><li><a href="#If">If</a></li><li><a href="#Case">Case</a></li><li><a href="#Loop">Loop</a></li></ul></li><li><a href="#Texture-Mapping">Texture Mapping</a>    </li><li><a href="#Examples">Examples</a></li></ul></li></ul>
               
             </div>
           </div>
@@ -727,20 +727,16 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <li>The <a href="#Editor">editor page</a> is where the user will work on their project.</li>
 </ul>
 <hr>
-<p><img src="https://i.imgur.com/chD7Plf.png" />   </p>
+<p><img src="https://i.imgur.com/Sx4gBtn.png" />   </p>
 <p class="page" id="Management"></p><h1>Management</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/mctxP9g.png" /></p>
+<p><img src="https://i.imgur.com/T4UMWrl.png" /></p>
 <ol>
-<li>The current mode of the editor, it determines the type of asset being managed. </li>
+<li>Common operations for the selected type of asset. </li>
+<li>Switch between assets types.</li>
 <li>A collection of tiles representing a particular asset. It will look different for each type of asset.</li>
-<li>The selector button for project mode. </li>
-<li>The selector button for function mode. </li>
-<li>The selector button for material mode. </li>
-<li>The creation button for the current mode. In cases where more than a type of asset can be created a menu will appear.</li>
-<li>The import button for the current mode. A different file extension will be expected for each asset, please refer to the <a href="#File-Extensions">file extension list</a> page for more info.</li>
-<li>The search box will filter the tiles by name.</li>
-<li>The settings button, see <a href="#settings">Settings</a></li>
+<li>Search bar. </li>
+<li>Miscellaneous operations: <a href="#settings">Settings</a> and Help. </li>
 </ol>
 <h2 id="introduction">Introduction</h2>
 <p>This page allows you to manage your high level assets: functions, materials, and even other projects. The <a href="#Reference">reference</a> section shows highlights and points of interest. </p>
@@ -751,27 +747,32 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <li><a href="#Material-Management">Material Management</a></li>
 </ul>
 <h2 id="settings">Settings</h2>
-<p>When clicking the settings buttons (9), a dialog will appear asking for the local folder where your files will be stored. You may maintain as many different folders in whatever hierarchy you want. You also have a history of those folders saved.</p>
+<p>When clicking the settings buttons (5), a dialog will appear asking for the local folder where your files will be stored. You may maintain as many different folders in whatever hierarchy you want. You also have a history of those folders saved.</p>
 <p class="page" id="Project-Management"></p><h1>Project Management</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/cozueLC.png" /></p>
+<p><img src="https://i.imgur.com/YS2Fhy8.png" /></p>
 <ol>
+<li>Create new project.</li>
+<li>Import project.</li>
+<li>Look at samples.</li>
 <li>The project&#39;s name.</li>
 <li>The project&#39;s available actions via menu.</li>
-<li>The project&#39;s screenshot or a project icon, clicking this area will open the editor.</li>
 <li>The Batch Render button, see <a href="#Batch-Render">Batch Render</a>.</li>
 <li>The Batch Result button, see <a href="#batch-renderresults">Batch Render Results</a>.</li>
 <li>Export action, will open a dialog asking for the destination file to be saved as a copy of the selected project.</li>
 <li>Clone action, will open a dialog asking for the new project&#39;s name that will be a copy of the selected project.</li>
 <li>Remove action, will delete the project after confirmation.</li>
 </ol>
+<h1 id="introduction">Introduction</h1>
 <p>Projects are the collections of files that make up your 3D models. When in project mode, you may create, delete, clone, import and export your projects. You may also launch the editor for any particular project and, on the full version of the software, produce as many variations of the building as needed.</p>
 <h2 id="creating-projects">Creating Projects</h2>
-<p>Create a project by clicking on the plus icon <img src="https://i.imgur.com/gxr7Pho.png" /> and entering a name for it in the subsequent dialog. The new project will be immediately opened for edition.</p>
+<p>Create a project by clicking on the corresponding action <a href="#reference">(1)</a> and entering a name for it in the subsequent dialog. The new project will be immediately opened for edition.</p>
 <h2 id="importing-projects">Importing Projects</h2>
-<p>Projects are imported as a .3de file. To import click on the chevron icon <img src="https://i.imgur.com/U5BZp00.png" /> to open the file import dialog pictured below. Select your file and click OK.</p>
+<p>Projects are imported as a .3de file. To import click on the corresponding action <a href="#reference">(2)</a>. Select your file and click OK.</p>
 <h2 id="editing-projects">Editing Projects</h2>
-<p>Click on the central area of any project project tile such as the one shown as (3) in the <a href="#reference">reference</a> section. </p>
+<p>Click on the central area of any project project tile. </p>
+<h2 id="exporting-projects">Exporting Projects</h2>
+<p>Click the export menu <a href="#reference">(8)</a> accessible through the project&#39;s action menu <a href="#reference">(5)</a>.</p>
 <p class="page" id="Batch-Render"></p><h1>Batch Render</h1>
 <h2 id="reference">Reference</h2>
 <p><img src="https://i.imgur.com/EVmIKZ3.png" /></p>
@@ -785,25 +786,19 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <h2 id="introduction">Introduction</h2>
 <p>Batch rendering is the process by which variations of a threedee model are produced. The resulting models will be produced in standard fbx format and be available as soon as produced. See <a href="#batch-results">Batch Results</a>.</p>
 <h2 id="batch-rendering">Batch Rendering</h2>
-<p>Click on the play icon <img src="https://i.imgur.com/xTI8CKw.png" /> on a project&#39;s tile in order to render multiple variations. Doing so opens the batch render dialog:</p>
-<p><img src="https://i.imgur.com/URugsJj.png" /></p>
-<ol>
-<li>Variation selector: A project may contain several variations, the user may choose which of those to batch render.</li>
-<li>Amount: how many different fbx files are to be generated.</li>
-<li>Seed selector: A threedee variation is defined by a single number or seed, the user may wish to render previously rendered variations.</li>
-<li>Variation list: All variations selected by the user will appear in the list, different number of fbx files can be rendered for any variation.</li>
-<li>Style selector: The material styles to be used in the rendering process, if multiple styles are specified a random one will be selected for any particular fbx file.</li>
-<li>Level of detail selector: threedee models might contain information on how to render on multiple quality levels. </li>
-<li>Thread count selector: See <a href="#Performance">Performance</a></li>
-<li>Triangulation selector: See <a href="#Triangulation">Triangulation</a></li>
-<li>Per job multithread: See <a href="#Performance">Performance</a></li>
-<li>Default mapping selector: See <a href="#Texture-Mapping">Texture Mapping</a></li>
-<li>Default mapping orientation: See <a href="#Texture-Mapping">Texture Mapping</a></li>
-<li>Save as default button: Saves the current configuration for future use.</li>
-</ol>
-<p>how many physical threads are to be used when rendering, the more the quicker the rendering will get done. You must me cautious not setting this number too high or the computer&#39;s performance may downgrade.</p>
+<p>Click on the play icon <a href="#reference">(1)</a> on a project&#39;s tile in order to render multiple variations. Doing so opens the batch render dialog:</p>
+<p><img src="https://i.imgur.com/RCs4XDM.png" /></p>
+<p>The Batch Render Dialog is split in three main areas: Job <a href="#batch-rendering">(1)</a>, Geometry <a href="#batch-rendering">(2)</a> and Performance <a href="#batch-rendering">(3)</a>. The job tab deals with the project-specific details while geometry and performance are mostly static configuration. </p>
+<p>To batch render a threedee model the user will first decide which variations of the model to use <a href="#batch-rendering">(4)</a>. For each of these variations a number of distinct models can be specified <a href="#batch-rendering">(6)</a> or a number of space separated seeds <a href="#batch-rendering">(7)</a>. A seed is a serial number identifying a particular output. The user may also select which visual styles <a href="#batch-rendering">(5)</a> to use in the rendering, these will determine the materials assigned.</p>
+<p>Threedee can render in many different levels of detail and the user may decide which ones to obtain by using <a href="#batch-rendering">(8)</a> and select the destination system with <a href="#batch-rendering">(9)</a>. You may save your current configuration for later use by clicking <a href="#batch-rendering">(10)</a>.</p>
+<h3 id="geometry">Geometry</h3>
+<p><img src="https://i.imgur.com/wiaVoUU.png" /></p>
+<p>The output geometry can be configured in terms of its triangulation (see <a href="#Triangulation">Triangulation</a>), its default texture mapping method and orientation (see <a href="#Texture-Mapping">Texture Mapping</a>).</p>
+<h3 id="performance">Performance</h3>
+<p><img src="https://i.imgur.com/AqlDyRu.png" /></p>
+<p>Rendering performance can be controlled by how many physical threads are to be used <a href="#performance">(1)</a>, the more the quicker the rendering will get done. You must me cautious not setting this number too high or the computer&#39;s performance may downgrade. You may also use multithreading on a per-seed basis by selecting yes on <a href="#performance">(2)</a>.</p>
 <h2 id="batch-results">Batch Results</h2>
-<p>To access the results of a batch rendering operation click the folder icon <img src="https://i.imgur.com/OnDBjAs.png" /> on a project&#39;s tile to open the results dialog:</p>
+<p>To access the results of a batch rendering operation click the folder icon <a href="#reference">(2)</a> on a project&#39;s tile to open the results dialog:</p>
 <p><img src="https://i.imgur.com/N6Qav8E.png" /></p>
 <ol>
 <li>Open folder in the file system where the fbx files are generated.</li>
@@ -812,9 +807,9 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <li>Result toolbar: shows error and allow to copy seed information to the clipboard.</li>
 </ol>
 <h2 id="triangulation">Triangulation</h2>
-<p>By default, threedee produces ngons as its output, most likely quads. This selector will allow for different triangulations. The options are:</p>
+<p>By default, threedee produces n-gons as its output, most likely quads. This selector will allow for different triangulations. The options are:</p>
 <ul>
-<li><strong>no</strong>: leave the results intact as ngons.</li>
+<li><strong>no</strong>: leave the results intact as n-gons.</li>
 <li><strong>all</strong>: triangulate all faces.</li>
 <li><strong>concave</strong>: triangulate only concave faces.</li>
 </ul>
@@ -822,59 +817,58 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <p>Texture Mapping is a process where threedee is still underdeveloped, offering only a home-brewed mapping method called &quot;unfold&quot;. To map specific materials and for general info see: <a href="#Texture-Mapping">Texture Mapping</a>. In this case, any material without mapping will use the values provided. The orientation value is described in the texture mapping section.</p>
 <p class="page" id="Function-Management"></p><h1>Function Management</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/wCSHBst.png" /></p>
+<p><img src="https://i.imgur.com/7eiMpwb.png" /></p>
 <ol>
-<li>Selection checkbox, tiles showing this checkbox will be exported together as a pack.</li>
 <li>Function&#39;s name.</li>
-<li>Functions available actions via menu.</li>
-<li>Export button, it exports a single function.</li>
-<li>Delete button, removes a function from your management page.</li>
+<li>Selection checkbox, tiles showing this checkbox will be exported together as a pack.</li>
+<li>Context menu.</li>
+<li>Export selected button, it exports all selected functions.</li>
+<li>Import files button, imports threedee files.</li>
+<li>Return to the project screen.</li>
 </ol>
 <h2 id="introduction">Introduction</h2>
 <p>Functions are user defined tools that can be reused in any project, imagine a door or a window that you can paste on any rectangle on your model. The management mode show functions that are available to all projects. </p>
 <h2 id="importing-functions">Importing Functions</h2>
-<p>Functions are imported as a .3df file. To import click on the chevron icon <img src="https://i.imgur.com/U5BZp00.png" /> to open the file import dialog pictured below. Select your file and click OK.</p>
+<p>Functions are imported as a .3df file. To import click on <a href="#reference">(5)</a> to open the file import dialog. Select your file(s) and click OK.</p>
 <h2 id="exporting-functions">Exporting Functions</h2>
-<p>You may export functions individually by using the export action shown as (4) in the <a href="#reference">Reference</a> section. Also, you can export several functions at a time by clicking its header to make it selected as shown as (1) in the <a href="#reference">Reference</a> section and clicking the download button <img src="https://i.imgur.com/eRc7LnU.png" />. You will be prompted for a file name for your function pack.</p>
+<p>You may export functions individually by using the export action shown in the context menu <a href="#reference">(3)</a>. Also, you can export several functions at a time by clicking its header to make it selected <a href="#reference">(2)</a> and clicking the batch export button <a href="#reference">(4)</a>. You will be prompted for a file name for your function pack.</p>
 <p class="page" id="Material-Management"></p><h1>Material Management</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/2iEb4gq.png" /></p>
+<p><img src="https://i.imgur.com/ehUZng9.png" /></p>
 <ol>
 <li>The material or style&#39;s name.</li>
 <li>The material or style&#39;s available actions via menu.</li>
 <li>The style icon, clicking this area will open the <a href="#creating-styles">style</a> dialog.</li>
 <li>The material&#39;s colored icon, clicking this area will open the <a href="#creating-materials">material</a> dialog.</li>
-<li>Click to export the material or style as a .3dm file.</li>
-<li>Click to clone the material or style, a dialog asking for a new name will appear.</li>
-<li>Click to delete the material or style.</li>
+<li>Click to create a new material.</li>
+<li>Click to create a new style.</li>
 </ol>
+<h2 id="introduction">Introduction</h2>
 <p>Materials provide you with a way to color your geometries. You can use our simple material system and let us generate, for you, an infinite variety of possible materials. This whole process is encompassed in a style which is inspired by styles found in CSS (cascading style sheets). </p>
 <p>A style pairs a name (class, in css), such as &quot;glass&quot; with several materials. When an style is applied to a particular variation, a single random material is chosen for each class and applied into any geometry with said class. This ensures you get a 3d model with distinct materials. All materials in a single style should match among themselves so each combination is appropriate (or good looking) for any variation. You will end up with several styles that can be applied to any model that matches your naming convention.</p>
 <p>The simple material system uniquely enables you to work with your favorite material system, such as 3D Studio Max, Unity, etc, rather than forcing to you to learn yet another proprietary material system. You&#39;ll find there is always enough information to allow you to integrate your favorite supported rendering back-end.</p>
 <h2 id="creating-materials">Creating Materials</h2>
-<p>Create a material by clicking on the plus icon <img src="https://i.imgur.com/gxr7Pho.png" />, selecting &quot;Material&quot; on the context menu that pops. The material dialog will appear:</p>
-<p><img src="https://i.imgur.com/j2WjFyr.png" /></p>
+<p>Create a material by clicking the corresponding link on the left menu <a href="#reference">(5)</a>. The material dialog will appear:</p>
+<p><img src="https://i.imgur.com/c46cML2.png" /></p>
 <ol>
 <li>The material&#39;s name</li>
 <li>The material&#39;s color, it will be used for rendering in-app and in combination with the material&#39;s template, when applies.</li>
 <li>A template material on a specific rendering backend (such as Blender, Unity, etc) representing this material.</li>
 <li>Material properties, these are in flux and are likely to change.</li>
+<li>Material&#39;s image selector.</li>
 </ol>
 <h2 id="creating-styles">Creating Styles</h2>
-<p>Create a material by clicking on the plus icon <img src="https://i.imgur.com/gxr7Pho.png" />, selecting &quot;Style&quot; on the context menu that pops. The style dialog will appear:</p>
-<p><img src="https://i.imgur.com/B0J2E4R.png" /></p>
+<p>Create a material by clicking on the corresponding link on the left menu <a href="#reference">(6)</a>. The style dialog will appear:</p>
+<p><img src="https://i.imgur.com/X8U6VhK.png" /></p>
 <ol>
 <li>The style&#39;s name</li>
 <li>Type a name and click the plus sign or hit enter to add a class.</li>
-<li>The name for classes already added.</li>
-<li>The list of materials for any given class. Clicking the row will present a list of existing materials.</li>
-<li>A multiple selection list to choose materials to add or remove from a class.</li>
-<li>Click to remove a class from the style.</li>
+<li>The tile for the style&#39;s classes. Click to edit.</li>
 </ol>
+<p>Editing classes can be done by clicking a class tile <a href="#Creating-Styles">(3)</a>, it will open the class dialog where the user will be able to choose which materials to use on the particular class from a list of all available.</p>
+<p><img src="https://i.imgur.com/CkxsAK4.png" /></p>
 <h2 id="importing-materials-and-styles">Importing Materials and Styles</h2>
-<p>Material are imported as a .3dm file. To import click on the chevron icon <img src="https://i.imgur.com/U5BZp00.png" /> to open the file import dialog pictured below. Select your file and click OK.</p>
-<h2 id="editing-materials-and-styles">Editing Materials and Styles</h2>
-<p>Click on the central area of any style or material tile such as the one shown as (3) in the <a href="#reference">Reference</a> section. The <a href="#creating-materials">material</a> and <a href="#creating-styles">style</a> dialogs will appear on editing mode.</p>
+<p>Material are imported as a .3dm file. To import click on the corresponding action on the left menu. Select your file(s) and click OK.</p>
 <p class="page" id="Editor"></p><h1>Editor</h1>
 <h2 id="reference">Reference</h2>
 <p><img src="https://i.imgur.com/sJVy1kO.png" />   </p>
@@ -1171,8 +1165,10 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <li><a href="#Choose">Choose</a></li>
 <li><a href="#Merge">Merge</a></li>
 <li><a href="#Rename">Rename</a></li>
+<li><a href="#Instance">Instance</a></li>
 <li><a href="#Lod">Level of detail</a></li>
 <li><a href="#If">If</a></li>
+<li><a href="#Case">Case</a></li>
 <li><a href="#Loop">Loop</a></li>
 </ul>
 <p class="page" id="Cut"></p><h1>Cut</h1>
@@ -1236,10 +1232,11 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
 <p>This mode allows the user to filter geometric primitives into a set containing a certain amount of primitives and the rest. Which primitives go into each set is selected randomly. Under this mode, input will be filtered out of 2 outputs: &quot;output&quot; and &quot;else&quot; each representing the corresponding set. You can find and example <a href="#examplesselect-by-amount">here</a>.</p>
 <p class="page" id="Extrude"></p><h1>Extrude</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/UAGKXS8.png" />   </p>
+<p><img src="https://i.imgur.com/4xp5DG0.png" />   </p>
 <ol>
 <li>model selector</li>
 <li>merge faces selector</li>
+<li>closed volume selector</li>
 <li>label assignment</li>
 </ol>
 <h2 id="introduction">Introduction</h2>
@@ -1253,7 +1250,10 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
 <h4 id="extrude-by-amount">Extrude by Amount</h4>
 <p>All profiles will be vertical, topping up at the specified amount. The height of the extrusion can be controlled by range or by variable. This is the simplest form of the instruction.</p>
 <h2 id="merging-adjacent-faces">Merging adjacent faces</h2>
-<p>Oftentimes its undesirable to extrude 2 segments that are opposite, this might create internal coplanar faces. For such scenarios, a merge option (<a href="#reference">2</a>) is provided. By selecting &quot;yes&quot; to the merge operation only the perimeter of a group of faces will be extruded. </p>
+<p>When extruding multiple input faces, the merge option <a href="#reference">(2)</a> controls whether the input faces will be extruded together or separately. Use merge = true only when you are expecting disjointed faces to collide with each other and thus creating a &quot;merged&quot; volume. Also, oftentimes its undesirable to extrude 2 segments that are opposite, this might create internal coplanar faces. For such scenarios, a merge option (<a href="#reference">2</a>) is provided. By selecting &quot;yes&quot; to the merge operation only the perimeter of a group of faces will be extruded. </p>
+<p>This functionality is akin to the Merge instruction when merging faces. </p>
+<h2 id="closed-volumes">Closed volumes</h2>
+<p>By default the faces that were just extruded are removed from the active mesh and this is the desired behavior for the large majority of cases. However, by using invisible faces it is possible to have a &quot;floating&quot; extrude. In such cases the closed volume option <a href="#reference">(3)</a> can be set to yes in order to add a closing face to the volume.</p>
 <p class="page" id="Inset"></p><h1>Inset</h1>
 <h2 id="reference">Reference</h2>
 <p><img src="https://i.imgur.com/i8RtV6j.png" />   </p>
@@ -1270,14 +1270,16 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
 <p>When an inset receives multiple adjacent inputs, the merge option (3) allows the user to forgo internal edges and only apply the inset operation to the perimeter of the input.</p>
 <p class="page" id="Choose"></p><h1>Choose</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/LL5awM9.png" />   </p>
+<p><img src="https://i.imgur.com/uaBsKU0.png" />   </p>
 <ol>
 <li>add choice control</li>
 <li>choice list and its actions</li>
-<li>method selector</li>
 </ol>
 <h2 id="introduction">Introduction</h2>
-<p>The choice instruction will randomly distribute its input among a list of choices. There are two modes: the default where the same random choice is applied to each input face and one where each input is redirected to a random choice. In the second case, potentially every choice may &quot;fire&quot; while in the default behavior just one choice does. </p>
+<p>The choice instruction will randomly distribute its input among a list of choices. Each input face will be redirected to one or several inputs depending on the advanced choice &quot;randomize multiple&quot; as depicted here:</p>
+<p><img src="https://i.imgur.com/JNzDFxs.png" />   </p>
+<p>The options are either &quot;one seed for all&quot; where every input will be redirected to the same choice or &quot;one seed for each&quot; where each input will be redirected randomly to one of the choices. For instance, you would want all windows on a tall building to be the same each time you generate a variation. However if you were to generate multiple variations of the same building in one scene you would want them all to be different.</p>
+<p>Please note that this option does not only apply to choices but basically to any instruction that randomizes its results.</p>
 <p class="page" id="Merge"></p><h1>Merge</h1>
 <h2 id="reference">Reference</h2>
 <p><img src="https://i.imgur.com/nsFsKPs.png" />   </p>
@@ -1296,16 +1298,39 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
 <p>This is simply a way to merge edges and faces at the same time.</p>
 <p class="page" id="Rename"></p><h1>Rename</h1>
 <h2 id="reference">Reference</h2>
-<p><img src="https://i.imgur.com/LcYcQWv.png" />   </p>
+<p><img src="https://i.imgur.com/Lo0bk2s.png" />   </p>
 <ol>
+<li>rename method</li>
 <li>rename all faces </li>
 <li>rename all edges</li>
 <li>rename specific labels</li>
 </ol>
 <h2 id="introduction">Introduction</h2>
-<p>A rename instruction will return the same geometry in its input with new labels. The label selector in (<a href="#reference">1</a>) will cause all faces to have the selected label. The label selector in (<a href="#reference">2</a>) will do the same but for edges. If finer control is needed, any source label may be turned into a target label (<a href="#reference">3</a>).</p>
+<p>A rename instruction will return the same geometry in its input with new labels. The label selector in (<a href="#reference">2</a>) will cause all faces to have the selected label. The label selector in (<a href="#reference">3</a>) will do the same but for edges. </p>
+<p>There are two rename methods: manual and by condition. By default the manual method is used where the user will specify pairs of labels to be replaced
+(<a href="#reference">4</a>). For finer control, the user may choose specific traits for segments to be replaced. For instance, you may replace only edges with a particular size or adjacency.</p>
 <h2 id="randomizing">Randomizing</h2>
 <p>It is possible to assign one of multiples labels to a single source. To achieve this simply specify the same source multiple times with different targets. By doing so for every input face or label tagged with a the source label, a random target label will be chosen. An example of this can be found <a href="#examplesrandom-rename">here</a>.</p>
+<p class="page" id="Instance"></p><h1>Instance</h1>
+<h2 id="reference">Reference</h2>
+<p><img src="https://i.imgur.com/iVc5OzA.png" />   </p>
+<ol>
+<li>upload button</li>
+<li>pivot selector</li>
+<li>input face selector</li>
+<li>target position</li>
+<li>target orientation</li>
+<li>randomize multiple selector</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>An instance instruction will position a pre-fabricated asset unto one or several input faces. The asset will be loaded from an .obj file by using the upload button <a href="#reference">(1)</a>. Note that you might want to include a .mtl file detailing the asset&#39;s material information. For more info on this see <a href="#Instance-Materials">Instance Materials</a>.</p>
+<p>Once the asset has been uploaded, the Instance instruction will position the asset&#39;s pivot <a href="#reference">(2)</a> onto the target&#39;s face location <a href="#reference">(4)</a>. At the moment, the pivot is assumed to be at the origin (axis aligned) of the asset mesh and the location will be either the face&#39;s centroid or the center of it&#39;s bounding box. The asset will also be rotated to match an edge on the face <a href="#reference">(6)</a> if specified. </p>
+<p>Lastly, the user may choose to keep or remove the target face by using <a href="#reference">(3)</a>. A minimal example can be found <a href="#examplesbasic-instance">here</a>.</p>
+<h2 id="transformation">Transformation</h2>
+<p>Once the instance is positioned on top of the target face, additional transformations are possible. The position, rotation and scale are configurable using the Transform tab pictured below. </p>
+<p><img src="https://i.imgur.com/wXbPAVu.png" />   </p>
+<h2 id="instance-materials">Instance Materials</h2>
+<p>Materials can be uploaded along with the .obj file. These materials will be passed verbatim into the output unless they match style classes. When a class is specified as material name, the regular mapping process will occur and the output will contain the style&#39;s materials.</p>
 <p class="page" id="Lod"></p><h1>Level of Detail</h1>
 <h2 id="introduction">Introduction</h2>
 <p>threedee gives modelers the ability to provide different sets of operations for different levels of detail. It does so by simply re-directing the flow of geometry depending on the globally selected level of detail. Imagine, for instance, the modeler has 3 versions of the same window, all with different levels of complexity. Using a log instruction with each of the windows linked to its appropriate lod it will guarantee that rendering on any user specified lod will produce the right level of complexity.</p>
@@ -1313,6 +1338,29 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
 <h2 id="introduction">introduction</h2>
 <p>An if instruction will redirect the flow of geometry to with its &quot;then&quot; or &quot;else&quot; connectors based on the value of a variable. This is useful when creating functions and willing to allow consumers of the function to control boolean features. For instance, the function could expose a &quot;build fence&quot; variable so the end user may decide whether to include a fence or not in its models. Currently, a value of 0 for the variable means &quot;false&quot; and everything else is true.</p>
 <p>The if instruction is useful to provide users of functions control over features instead of random selection. An example can be found <a href="#examplesbasic-if">here</a>.</p>
+<p class="page" id="Case"></p><h1>Case</h1>
+<h2 id="reference">Reference</h2>
+<p><img src="https://i.imgur.com/05d8mEA.png" />   </p>
+<ol>
+<li>new case selector</li>
+<li>case list</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>The case instruction classifies its input faces according to user-defined criteria. Cases are defined by expressions and are evaluated in order, these expression can use project&#39;s variables and bindings. Each case has a corresponding output that will reflect all input faces that match the case&#39;s expression.</p>
+<p>New cases are added using <a href="#reference">(1)</a> and can be deleted from the list <a href="#reference">(2)</a>. An example can be found <a href="#ExamplesBasic-Case">here</a>.</p>
+<h4 id="bindings">Bindings</h4>
+<p>A binding is a local variable created per input, the value of that variable reflects an aspect of the input face that is chosen by the user. Bindings have a dedicated tab on the case instruction that looks like this:</p>
+<p><img src="https://i.imgur.com/uTafVof.png" /> </p>
+<p>The available bindings are:   </p>
+<ul>
+<li>To Length: Bind a variable name to the length of an edge.</li>
+<li>To Area: Bind a variable name to the area of a face.</li>
+<li>To Segment Distance: Bind a variable name to the distance between two edges.</li>
+<li>To Angle Between Edges: Bind a variable name to the angle between two edges.</li>
+<li>Is Edge Opposite: Set a variable to &quot;true&quot; based on edge opposition.</li>
+<li>Is Adjacent To: Set a variable to &quot;true&quot; based on edge adjacency.</li>
+<li>To Label Count: Bind a variable name to amount of edges matching a condition.</li>
+</ul>
 <p class="page" id="Loop"></p><h1>Loop</h1>
 <h2 id="reference">Reference</h2>
 <p><img src="https://i.imgur.com/iffUfR1.png" />   </p>
@@ -1353,7 +1401,9 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
 <li><a href="#merge-faces">Merge Faces</a></li>
 <li><a href="#merge-edges">Merge Edges</a></li>
 <li><a href="#merge-advanced">Merge Advanced</a></li>
+<li><a href="#basic-instance">Basic Instance</a></li>
 <li><a href="#basic-if">Basic If</a></li>
+<li><a href="#basic-case">Basic Case</a></li>
 <li><a href="#basic-loop">Basic Loop</a></li>
 </ul>
 <h2 id="tutorial">Tutorial</h2>
@@ -1609,6 +1659,23 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
   </tr>
 </table>
 
+<h2 id="basic-instance">Basic Instance</h2>
+<table>
+  <tr>
+    <td><img src="https://i.imgur.com/qprQvSk.png"/></td>
+    <td>
+        Instancing Suzanne, the blender monkey. 
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+        <a href="https://github.com/xkp/threedee-doc/wiki/files/suzanne.3de">
+           https://github.com/xkp/threedee-doc/wiki/files/suzanne.3de
+        </a> 
+    </td>
+  </tr>
+</table>
+
 <h2 id="basic-if">Basic If</h2>
 <table>
   <tr>
@@ -1621,6 +1688,23 @@ facts are: Will Be Labeled, Opposite Will Be Labeled.</li>
     <td colspan="2">
         <a href="https://github.com/xkp/threedee-doc/wiki/files/Basic-If.3de">
            https://github.com/xkp/threedee-doc/wiki/files/Basic-If.3de
+        </a> 
+    </td>
+  </tr>
+</table>
+
+<h2 id="basic-case">Basic Case</h2>
+<table>
+  <tr>
+    <td><img src="https://i.imgur.com/Rruf5nr.png"/></td>
+    <td>
+        Controlling height based on width. 
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+        <a href="https://github.com/xkp/threedee-doc/wiki/files/Basic-Case.3de">
+           https://github.com/xkp/threedee-doc/wiki/files/Basic-Case.3de
         </a> 
     </td>
   </tr>
